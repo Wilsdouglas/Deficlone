@@ -1,0 +1,216 @@
+<!DOCTYPE html><html class="no-js" lang="en-US"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="images/favicon.png" rel="icon" type="image/x-icon">
+<!-- Add icon library -->
+<link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+ <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="js/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="js/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<link href="css/main.css" rel="stylesheet">
+<link href="https://defiblock.co.uk/css/animate.min.css" rel="stylesheet">
+
+<title>DefiMiners</title>
+<link rel="manifest" href="https://defiblock.co.uk/js/manifest.json">
+<meta name="theme-color" content="#E98F00">
+<meta name="msapplication-navbutton-color" content="#E98F00">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#E98F00">
+
+
+<meta name="theme-color" content="#E98F00">
+<meta name="msapplication-navbutton-color" content="#E98F00">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#E98F00">
+
+<link href="images/logo3.png" rel="icon" type="image/x-icon">
+<link rel="icon" sizes="192x192" href="https://defiblock.co.uk/images/icon/icon-192.png">
+
+<meta name="keywords" content="DefiBlock, Options, Binary">
+<meta property="og:image" content="images/icon-310x310.png">
+
+<meta name="msapplication-square310x310logo" content="https://defiblock.co.uk/images/icon/icon-310x310.png">
+<meta name="msapplication-square70x70logo" content="https://defiblock.co.uk/images/icon/icon-70x70.png">
+<meta name="msapplication-square150x150logo" content="https://defiblock.co.uk/images/icon/icon-150x150.png">
+<meta name="msapplication-wide310x150logo" content="https://defiblock.co.uk/images/icon/icon-310x150.png">
+
+<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://defiblock.co.uk/images/icon/apple-touch-icon-57x57
+.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://defiblock.co.uk/images/icon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+
+
+<meta property="og:site_name" content="DefiBlock">
+<meta property="og:title" content="Binary Trading With DefiBlock">
+<meta name="description" content="Binary Trading With DefiBlock, is totally different from its competitors trying to achieve something special starting with the...">
+<meta property="og:description" content="Binary Trading With DefiBlock, is totally different from its competitors trying to achieve something special starting with the...">
+<meta property="og:type" content="website">
+
+
+<link href="css/select2.min.css" rel="stylesheet">
+
+</head>
+<body class="auth-body">
+<style>
+  .skiptranslate {
+    display: none !important;
+  }
+  body {
+    top: 0 !important;
+  }
+</style>
+<script src="js/regvalidation.js"></script>
+<link rel="stylesheet" href="css/intlTelInput.css">
+
+<div class="container text-center">
+		<div class="text-center">
+			<a href="index.html">
+				<img src="images/logo3.png" style="height: 200px" class="text-center">
+			</a>
+		</div>
+    <div class="auth-container">
+		<h4>Register Your Account</h4>
+				
+	<form action="" method="POST" class="validate" id="register">
+		<div class="row">
+			<div class="col-md-6 py-2">
+				<input type="text" placeholder="First Name" required="" name="fname" value="" class="form-control">
+				<div id="fnameErr" class="form_hint">First name must not be empty!</div>
+			</div>
+			<div class="col-md-6 py-2">
+				<input type="text" placeholder="Last Name" required="" name="lname" value="" class="form-control">
+				<div id="lnameErr" class="form_hint">Last name must not be empty!</div>
+			</div>
+		</div>
+        <div class="form-group">
+        </div>
+                <div class="form-group">
+			<input type="email" placeholder="Email" required="" name="email" value="" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$" oninput="emaila(this)" class="form-control">
+            <div id="emailErr" class="form_hint"> Email must not be empty!</div>
+            <div id="emailErra" class="form_hint"> Email format not supportted!</div>
+            <div id="emailErrb" class="form_hint"> Email already exist!</div>
+            <div id="emailErrc" class="form_hint"><i class="fa fa-spinner fa-spin center"></i></div>
+        </div>
+        <div class="form-group">
+        	<select name="gender" id="gender" class="custom-select">
+                <option id="male">Male</option>
+                <option id="female">Female</option>
+            </select>
+        </div>
+		<div class="form-group text-black-50">
+			<input type="tel" placeholder="Mobile-number" id="mobile-number" required="" name="pno" value="" class="form-control">
+			<select id="address-country" name="country" style="display:none" required=""></select>
+		</div>
+        <div class="form-group">
+			<input type="text" placeholder="Zip Code" required="" name="zip" value="" class="form-control">
+            <div id="zipErr" class="form_hint">Zip code must not be empty!</div>
+        </div>
+        <div class="form-group">
+			<input type="text" placeholder="Address" required="" name="address" value="" class="form-control">
+            <div id="addressErr" class="form_hint">Address must not be empty!</div>
+		</div>
+    <div class="form-group">
+      <select name="Valid id" id="identification" class="custom-select">
+            <option id="License">Drivers license</option>
+            <option id="Passport">Passport</option>
+            <option id="SSN">SSN</option>
+        </select>
+    </div>
+    <div class="form- text-black-0">
+      <input type="file"="file-input" placeholder="Valid ID" required="" name="valid id class="form-control">
+  </div>
+		<div class="row mb-3">
+			<div class="col-md-6 py-2">
+				<input type="password" placeholder="Password" name="password" id="password" oninput="passworda(this)" required="" pattern="(?=.*\d)(?=.*[A-Za-z]).{6,}" class="form-control">
+				<div id="passwordErr" class="form_hint">Make your password stronger with more letters and at least a numbers</div>
+			</div>
+			<div class="col-md-6 py-2">
+				<input type="password" placeholder="Confirm Password" required="" name="password" class="form-control" oninput="passwordca(this)">
+			</div>
+		</div>
+        <div class="form-group">
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" name="agree" class="custom-control-input" id="agree" required="">
+				<label class="custom-control-label" for="agree">I agree to DefiBlock <a href="rules.html"_blank>Terms and conditions</a></label>
+			</div>
+        </div>
+		<button type="submit" class="btn btn-primary">Register</button>
+	</form>
+		</div>
+    <a href="login.html">Already have an account</a></div>
+<script src="js/intlTelInput.js"></script> 
+
+<script>
+var countryData = $.fn.intlTelInput.getCountryData(),
+  telInput = $("#mobile-number"),
+  addressDropdown = $("#address-country");
+
+telInput.intlTelInput({
+  initialCountry: "auto",
+  customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+	  return "e.g. " + selectedCountryPlaceholder;
+	},
+  preferredCountries: [ "us", "gb" ],
+  geoIpLookup: function(callback) {
+    $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      var countryCode = (resp && resp.country) ? resp.country : "";
+      callback(countryCode);
+    });
+  },
+  utilsScript: "https://defiblock.co.uk/js/utils.js" // just for formatting/placeholders etc
+});
+
+// populate the country dropdown
+$.each(countryData, function(i, country) {
+  addressDropdown.append($("<option></option>").attr("value", country.name).text(country.name));
+});
+// set it\'s initial value
+var initialCountry = telInput.intlTelInput("getSelectedCountryData").name;
+addressDropdown.val(initialCountry);
+
+// listen to the telephone input for changes
+telInput.on("countrychange", function(e, countryData) {
+  addressDropdown.val(countryData.name);
+});
+
+// listen to the address dropdown for changes
+addressDropdown.change(function() {
+	telInput.intlTelInput("setCountry", $(this).val());
+});
+$("#register").submit(function(e) {
+	telInput.val(telInput.intlTelInput("getNumber"));
+});
+
+</script>
+
+<style>
+  .skiptranslate {
+    display: none !important;
+  }
+  body {
+    top: 0 !important;
+  }
+</style>
+<div id="google_translate_element" style="display:none"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: "en"}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="js/element.js"></script>
+
+
+</body></html>
